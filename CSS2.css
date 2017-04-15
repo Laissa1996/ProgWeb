@@ -1,0 +1,24 @@
+p{
+  border: 5px solid brown;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+  color: black;
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+  text-align: center;
+	padding-top: 10px;
+}
+body{
+  background-color: lightblue;
+  background-image: url(http://2.bp.blogspot.com/-ZN6MUxZcM94/UxUTCcDYgrI/AAAAAAAACQw/qNEDQgWcVAI/s1600/Capa+Jogando+Xadrez+com+o+Anjos+2.jpg);
+  background-size: 1000px 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-left: 210px;
+  Padding-right: 800px;
+
+}

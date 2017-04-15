@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Instituto de Computação</title>
+  </head>
+  <body>
+    <h1>Formulário de Contato</h1>
+    <p>Por favor, preencha o formulário abaixo e clique no botão Enviar Mensagem.Agradecemos por seu contato</p>
+    <fieldset>
+      <legend>Dados Básicos</legend>
+        Nome: <input type = "text" name = "nome" id = "nome"/><br>
+        E-mail: <input type = "email" name = "email" id = "email" required placeholder = "seunome@dominio.com.br"><br>
+        Website: <input type = "text" value = "http://" name = "website" id = "website"/><br>
+    </fieldset>
+    <fieldset>
+        <legend>Seu curso no Instituto de Computação</legend>
+          <input type = "radio" name = "curso" value = "cc" id = "cc">
+          <label for "cc"> Ciência da Computação</label><br>
+          <input type = "radio" name = "curso" value = "si" id = "si">
+          <label for "cc"> Sistema de Informação</label><br>
+          <input type = "radio" name = "curso" value = "ec" id = "ec">
+          <label for "cc"> Engenharia da Computação</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Assinale as linguagens já usadas por você</legend>
+            <label>Java</label>
+            <input type = "checkbox" name = "ling" id = "java" value = "java">
+            <label>C</label>
+            <input type = "checkbox" name = "ling" id = "c" value = "c">
+            <label>C++</label>
+            <input type = "checkbox" name = "ling" id = "cpp" value = "cpp">
+            <label>Perl</label>
+            <input type = "checkbox" name = "ling" id = "perl" value = "perl">
+            <label>Python</label>
+            <input type = "checkbox" name = "ling" id = "python" value = "python">
+            <label>Javascript</label>
+            <input type = "checkbox" name = "ling" id = "js" value = "js">
+	</fieldset>
+	<fieldset>
+            <legend>Dados Complementares</legend>
+				Cor Favorita <input type="color" name="Cor Favorita="#ff0000"><br>
+				<label for = "nascimentos">Data de Nascimento</label>
+				<input type = "date" value = "mm/dd/yyyy" name = "nascimento" id = "nascimento"><br>
+				<label for = "ano"> Ano de Entrada em seu Curso do IComp </label>
+				<input type = "number" name = "ano" min = "1980" max = "2016" step = "1" value = "2000" id = "ano"><br>
+				Nota para este site <input type="range" name="points" min="0" max="10">
+	</fieldset>
+	<fieldset>
+		<legend>Área de atuação</legend>
+			<select name = "area" id = "area">
+				<option value = "1">Banco de Dados</option>
+				<option value = "2">Educação a Distância</option>
+				<option value = "3">Engenharia de Software</option>
+				<option value = "4">Otimização</option>
+				<option value = "5">Programação para a Web</option>
+				<option value = "6">Recuperação de Informação</option>
+				<option value = "7">Redes de Computadores</option>
+			</select>
+	</fieldset>
+	<fieldset>
+		<legend>Submeta seu curriculo vitae</legend>
+			<input type = "file" name = "curriculo">
+	</fieldset>
+	<fieldset>
+		<legend>Digite sua Mensagem</legend>
+			<textarea = "mensagem" row = "20" cols = "50" placeholder= "Este é o valor padrão!"></textarea><br>
+	</fieldset>
+	<form id = "contact" method = "GET" action = "processa.php"><br>
+		<input type = "reset" value = "Resetar Dados"/>
+		<input type = "submit" name = "submit" value = "Enviar Mensagem"/>
+	</form>
+  </body>
+</html>
